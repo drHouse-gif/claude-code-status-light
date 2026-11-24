@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "/home/you/.claude/hooks/claude-bulb.sh ready",   "async": true, "timeout": 5 } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "/home/you/.claude/hooks/claude-bulb.sh busy",    "async": true, "timeout": 5 } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "/home/you/.claude/hooks/claude-bulb.sh ready",   "async": true, "timeout": 5 } ] }
+    ],
+    "Notification": [
+      { "hooks": [ { "type": "command", "command": "/home/you/.claude/hooks/claude-bulb.sh waiting", "async": true, "timeout": 5 } ] }
+    ]
+  }
+}
